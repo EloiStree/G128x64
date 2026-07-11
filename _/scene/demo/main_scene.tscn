@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://bin0sxy3l2kiu" path="res://addons/2025_10_28_gdp_trusted_websocket/scenes/prefab/prefab_tbio_ws_default_server.tscn" id="2_e07n7"]
 [ext_resource type="PackedScene" uid="uid://e1psl5t55wn8" path="res://addons/2025_10_28_gdp_trusted_websocket/scenes/prefab/prefab_tbio_ws_default_client.tscn" id="3_kt5jg"]
 [ext_resource type="PackedScene" uid="uid://b27av0onryyfd" path="res://addons/2025_10_27_gdp_udp_in_out_gate/scenes/prefab/prefab_push_listen_udp_tbio.tscn" id="4_kt5jg"]
+[ext_resource type="PackedScene" uid="uid://ktm7k0co2o7l" path="res://addons/mqtt/mqtt.tscn" id="6_60n18"]
 
 [sub_resource type="Image" id="Image_15hio"]
 data = {
@@ -87,6 +88,24 @@ material_to_duplicate = SubResource("StandardMaterial3D_15hio")
 material_duplicated = SubResource("StandardMaterial3D_32hlj")
 metadata/_custom_type_script = "uid://bs0c808qkg4o2"
 
+[node name="ControlMenuShortFormat" type="Control" parent="CanvasLayer/FullScreen/AspectRatioContainer" unique_id=492228044]
+visible = false
+layout_mode = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="AspectRatioContainer" type="AspectRatioContainer" parent="CanvasLayer/FullScreen/AspectRatioContainer/ControlMenuShortFormat" unique_id=1133933020]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.28
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+ratio = 0.5625
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer/FullScreen/AspectRatioContainer/ControlMenuShortFormat/AspectRatioContainer" unique_id=1243400546]
+layout_mode = 2
+color = Color(0.9882353, 0.92156863, 0.9647059, 0.078431375)
+
 [node name="LabelGetIps" type="Label" parent="CanvasLayer/FullScreen" unique_id=450587319]
 layout_mode = 1
 anchors_preset = -1
@@ -118,6 +137,8 @@ list_targets_ipv4 = Array[String](["127.0.0.1"])
 [node name="Timer" parent="PushListenUdpTBIO/PushUdpTextByte/PushUdpOutToTargets" index="0" unique_id=2096711821]
 autostart = false
 
+[node name="MQTT" parent="." unique_id=590632512 instance=ExtResource("6_60n18")]
+
 [connection signal="on_texture_updated" from="CanvasLayer/FullScreen/AspectRatioContainer/TextureRect/SSD1306BoolArrayToTexture" to="CanvasLayer/FullScreen/AspectRatioContainer/TextureRect" method="set_texture"]
 [connection signal="on_ipv4_group_found_join" from="CanvasLayer/FullScreen/LabelGetIps/SSD1306GetIpAsString" to="CanvasLayer/FullScreen/LabelGetIps" method="set_text"]
 [connection signal="on_received_byte" from="TbioWsDefaultServer/TbioWsJoinPeersIdAsOnePeer" to="CanvasLayer/FullScreen/AspectRatioContainer/TextureRect/SSD1306BoolArrayToTexture" method="set_texture_with_bit_array_if_exact_size"]
@@ -130,3 +151,4 @@ autostart = false
 [editable path="PushListenUdpTBIO"]
 [editable path="PushListenUdpTBIO/ListenUdpTextByte"]
 [editable path="PushListenUdpTBIO/PushUdpTextByte"]
+[editable path="MQTT"]
