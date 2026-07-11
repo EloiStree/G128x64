@@ -1,3 +1,7 @@
+```
+git clone --recursive https://github.com/EloiStree/G128x64.git
+```
+
 # G128x64
 
 > A lightweight Godot application dedicated to displaying an SSD1306 screen on any platform.
