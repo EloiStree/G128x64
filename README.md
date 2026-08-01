@@ -1,5 +1,5 @@
-Developer Note: Since then, I started to create [CodeLabTV](https://github.com/EloiStree/CodeLabTV) that has this feature in.
-**Reference:** https://github.com/EloiStree/GUID/tree/main/G8vbhpSjwc8TMG8chY34ZyM2FRuLkD6HV8gj7EjS2mJh
+Developer Note: Since then, I started to create [CodeLabTV](https://github.com/EloiStree/CodeLabTV) that has this feature in.   
+**Reference:** https://github.com/EloiStree/GUID/tree/main/G8vbhpSjwc8TMG8chY34ZyM2FRuLkD6HV8gj7EjS2mJh   
 
 
 --------
