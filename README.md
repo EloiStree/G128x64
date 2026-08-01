@@ -1,3 +1,9 @@
+Developer Note: Since then, I started to create [CodeLabTV](https://github.com/EloiStree/CodeLabTV) that has this feature in.
+**Reference:** https://github.com/EloiStree/GUID/tree/main/G8vbhpSjwc8TMG8chY34ZyM2FRuLkD6HV8gj7EjS2mJh
+
+
+--------
+
 ```
 git clone --recursive https://github.com/EloiStree/G128x64.git
 ```
