@@ -6,6 +6,8 @@ Developer Note: Since then, I started to create [CodeLabTV](https://github.com/E
 
 ```
 git clone --recursive https://github.com/EloiStree/G128x64.git
+cd G128x64
+git submodule foreach 'git switch main'
 ```
 
 # G128x64
