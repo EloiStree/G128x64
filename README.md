@@ -9,6 +9,9 @@ git clone --recursive https://github.com/EloiStree/G128x64.git
 cd G128x64
 git submodule foreach 'git switch main'
 ```
+```
+git config --global --add safe.directory /storage/emulated/0/documents/
+```
 
 # G128x64
 
