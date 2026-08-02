@@ -15,16 +15,24 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 [application]
 
 config/name="G128x64"
-config/description="Just a Display of a resolution of 128x64 SSD1306"
+config/description="This application allows to display a 128x64 display screen (as simulation of the SSD1306 display)
+Some feature can be add, but the application is here to be lit."
+config/version="2026.4.1"
 run/main_scene="uid://cl72h248iciyx"
 config/features=PackedStringArray("4.7", "GL Compatibility")
-config/icon="res://icon.svg"
+boot_splash/stretch_mode=3
+boot_splash/image="res://_/assets/2d/icon/G128x64_ICON2.png"
+config/icon="res://_/assets/2d/icon/G128x64_ICON2.png"
 
 [display]
 
-window/size/viewport_width=1600
-window/size/viewport_height=900
+window/size/viewport_width=1920
+window/size/viewport_height=1080
 window/size/mode=3
+window/size/initial_position_type=3
+window/size/initial_screen=1
+window/stretch/mode="canvas_items"
+window/stretch/aspect="keep_width"
 
 [dotnet]
 
