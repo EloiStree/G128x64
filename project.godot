@@ -8,10 +8,6 @@
 
 config_version=5
 
-[animation]
-
-compatibility/default_parent_skeleton_in_mesh_instance_3d=true
-
 [application]
 
 config/name="G128x64"
@@ -19,7 +15,7 @@ config/description="This application allows to display a 128x64 display screen (
 Some feature can be add, but the application is here to be lit.s"
 config/version="2026.11.13"
 run/main_scene="uid://cl72h248iciyx"
-config/features=PackedStringArray("4.7", "GL Compatibility")
+config/features=PackedStringArray("4.8", "GL Compatibility")
 boot_splash/stretch_mode=3
 boot_splash/image="res://_/assets/2d/icon/G128x64_ICON2.png"
 config/icon="res://_/assets/2d/icon/G128x64_ICON2.png"
